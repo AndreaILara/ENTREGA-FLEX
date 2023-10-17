@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+:root{
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+  --terciary-color: #CFDCED;
+  --background-color:#7da0ce1f;
+  --footer-color: #DEDCDB;
+
+}
+header{
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+header > nav{
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+.nav-bar{
+  display: flex;
+  width: 97%;
+  list-style: none;
+  gap: 40px;
+  justify-content: flex-end;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.menu{
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+
+#hero{
+  background-color: var(--background-color);
+  display: flex;
+ align-items: center;
+ min-height: 100vh;
+ justify-content: space-around;
+ flex-wrap: wrap;
+ padding: 50px;
+
+}
+
+.info{
+  width: 40%;
+  min-width: 516px;
+}
+
+#hero > img{
+  width: 60%;
+  max-width: 500px;
+  min-width: 300px;
+  border: none;
+}
+.info > h1{
+  font-size: 60px;
+}
+
+button{
+  border-radius: 10px;
+  padding: 15px 25px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--terciary-color);
+  color: var(--secondary-color);
+  margin-top: 30px;
+}
+#secondary {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#secondary > img {
+  width: 80%;
+  max-width: 500px;
+  margin: 40px;
+}
+
+#secondary > h2{
+font-size: 60px;
+ width: 100%;
+}
+#secondary > p{
+  font-size: 40px;
+  width: 100%;
+  padding: 20px;
+}
+#secondary > div{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  flex-wrap: wrap;
+  background-color: var(--footer-color)
+}
+.footer{
+  list-style: none;
+  font-size: 12px;
+  margin: 15px;
+  
+}
+footer .footer li {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.footer > li:first-child{
+ font-weight: bolder;
+  font-size: 13px;
+}
+.copy {
+  font-size: 12px;
+  background-color: var(--footer-color);
+  text-align: center;
+}
+
+@media (max-width:500px){
+  header > nav{
+    display: none;
+  }
+  .menu{
+    display: block;
+  }
+}
+@media (max-width:570px){
+  .info > h1{
+    font-size: 30px;
+  }
+  .info{
+    width: 100%;
+  min-width: 0px;
+  }
+}
